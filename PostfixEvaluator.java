@@ -13,6 +13,15 @@ public class PostfixEvaluator {
         BoundedStackInterface<Integer> stack = new ArrayStack<>(100);
         Scanner tokens = new Scanner(expression);
 
+        while (expression.length() != 0) {
+
+            int index = expression.indexOf(" ");
+            String component = expression.substring(0,index);
+            expression = expression.substring(index+1);
+
+            
+        }
+
         // TODO 1: Process tokens one at a time.
         // TODO 2: If a token is an integer, push it onto the stack.
         // TODO 3: If it is +, -, *, or /, pop two operands.
