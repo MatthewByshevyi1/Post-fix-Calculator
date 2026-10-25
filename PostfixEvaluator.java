@@ -61,7 +61,7 @@ public class PostfixEvaluator {
                 }
 
                 try {
-                    stack.push(one * two);
+                    stack.push(one + two);
                 } catch (StackOverflowException e) {
                     throw new PostFixException("Too many ints");
                 }
@@ -80,7 +80,7 @@ public class PostfixEvaluator {
                 }
 
                 try {
-                    stack.push(one * two);
+                    stack.push(one - two);
                 } catch (StackOverflowException e) {
                     throw new PostFixException("Too many ints");
                 }
